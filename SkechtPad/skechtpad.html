@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="skechtpad.css">
+    <title>Etch-A-Skecht</title>
+</head>
+<body>
+    <h1>Echt-A-Skecht</h1>
+    <div class="container">
+        <div class="tools">
+        <div class="buttons">
+            <h3 class="mode">Mode:</h3>
+            <div>
+                <input type="color" value="#FFBB00" id="pencolor" onclick="changeColor('penColorInp')">
+                <button>Choose Pen Color</button> 
+            </div>
+            <div>
+                <input type="color" value="#BBFF00" id="backcolin" onclick="changeColor('backGrCl')">
+                <button id="boardCol">Choose Background Color</button>
+            </div>
+            <div>
+                <input type="number" placeholder="enter size" onchange="changeSize(this.value)" value="16" class="sizesel">
+                <button>Set size</button>
+                <div class="invalid">Pls choose a number between 2 and 100</div>
+                </div>
+                
+        <button onclick="changeColor('white')" class="eraser">Eraser</button>
+        <button onclick="changeColor('black')"class="black">Black</button>
+        <button onclick="changeColor('gray')"class="gray">Gray</button>
+        <button onclick="changeColor('random')" class="rainbow">Rainbow Mode</button>
+        <button id="gridToggle">Border Toggle</button>
+        <button onclick="resetBoard()">Reset</button>
+        
+          
+       </div>  
+    </div>
+    
+    <div class="gridboard">
+    </div>
+   </div>
+    <script src="skechtpad.js"></script>
+</body>
+</html>
