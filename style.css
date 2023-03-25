@@ -104,5 +104,16 @@ input {
     box-shadow: 5px 3px 40px 1px black;
 }
 
-
+@media only screen and (max-width: 390px){
+ .container{
+     flex-direction: column;
+    gap: 2rem;
+ }
+ .tools{
+     align-items: center;
+ }
+ .gridboard{
+     width: 100%;
+ }
+}
 
